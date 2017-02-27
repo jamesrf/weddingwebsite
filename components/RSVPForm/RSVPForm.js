@@ -56,10 +56,13 @@ class RSVPForm extends React.Component {
         </div>
         <div className="mdl-card__supporting-text">
             James and Melinda's Wedding <br/>
+            Brock House Restaurant <br/>
             Sunday, October 8th, Vancouver, BC
         </div>
         <form ref={(form) => {this.dataForm = form;}} onSubmit={this.submit.bind(this)}>
+
             <ContactInfo changeHandler={this.handleDataFieldChange}/>
+          
             <AttendanceInfo changeHandler={this.handleDataFieldChange}/>
 
             <br/>

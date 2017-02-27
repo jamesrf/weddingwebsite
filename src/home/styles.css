@@ -1,9 +1,9 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 400px) {
   .content {
     padding: 0 16px;
   }
 
-  .MainImage {
+  .MainTextImage {
     background-image: url('./jamesandmelinda800.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -12,16 +12,38 @@
         padding-top: 60%;
 
   }
+
+  .JamesAndMelImage {
+    background-image: url('./us540.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+        padding-top: 51%;
+        padding-left: 10px;
+
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .MainImage {
+  .MainTextImage {
     background-image: url('./jamesandmelinda350.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
         padding-top: 60%;
+
+  }
+
+  .JamesAndMelImage {
+    background-image: url('./us540.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+        padding-top: 51%;
+        padding-left: 10px;
 
   }
 }
