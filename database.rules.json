@@ -1,6 +1,12 @@
 {
   "rules": {
     ".read": "auth != null",
-    ".write": "auth != null"
+    ".write": "auth != null",
+    "submissions":{
+        "$submission": {
+            ".read": false,
+            ".write": "!data.exists()"
+        }
+    }
   }
 }

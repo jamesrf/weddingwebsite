@@ -8,13 +8,6 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-.row {
-  padding: 40px;
+.NavLink {
+  font-family: 'Antic Didone', serif;
 }
-
-@media screen and (max-width: 1024px) {
-  .row {
-    padding: 0 16px;
-  }
-}
-

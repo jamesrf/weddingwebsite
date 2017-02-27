@@ -1,16 +1,17 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Layout from '../../components/Layout';
+import RSVPForm from '../../components/RSVPForm';
+
 import s from './styles.css';
 
-class HomePage extends React.Component {
+class RSVPPage extends React.Component {
 
   render() {
-
     return (
       <Layout className={s.content}>
         <div className="mdl-grid center-items">
           <div className= "mdl-layout-spacer"/>
-          <div className={s.MainImage}></div>
+          <RSVPForm/>
           <div className= "mdl-layout-spacer"/>
         </div>
       </Layout>
@@ -19,4 +20,4 @@ class HomePage extends React.Component {
 
 }
 
-export default HomePage;
+export default RSVPPage;

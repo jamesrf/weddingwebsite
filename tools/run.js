@@ -47,6 +47,7 @@ module.exports = task('run', () => new Promise((resolve) => {
       bs.init({
         port: process.env.PORT || 3000,
         ui: { port: Number(process.env.PORT || 3000) + 1 },
+        browser: "google chrome",
         server: {
           baseDir: 'public',
           middleware: [
