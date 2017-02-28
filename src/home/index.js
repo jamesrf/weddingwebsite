@@ -10,11 +10,6 @@ class HomePage extends React.Component {
       <Layout className={s.content}>
         <div className="mdl-grid center-items">
             <div className= "mdl-layout-spacer"/>
-            <div className={s.JamesAndMelImage}></div>
-            <div className= "mdl-layout-spacer"/>
-        </div>
-        <div className="mdl-grid center-items">
-            <div className= "mdl-layout-spacer"/>
             <div className={s.MainTextImage}></div>
             <div className= "mdl-layout-spacer"/>
         </div>
