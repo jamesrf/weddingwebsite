@@ -5,7 +5,6 @@ import GMap from '../../components/GMap';
 import s from './styles.css';
 
 class DetailsPage extends React.Component {
-//AIzaSyAuA144bHPb0NX-QM5PLPLcso_gQ8o17aU
   render() {
     return (
       <Layout className={s.content}>

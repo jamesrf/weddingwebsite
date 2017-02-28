@@ -7,10 +7,6 @@ import s from './RSVPForm.css';
 
 import * as firebase from 'firebase';
 
-import FIREBASE_CONFIG from '../../firebase.config.js'
-
-var app = firebase.initializeApp(FIREBASE_CONFIG);
-
 
 class RSVPForm extends React.Component {
 
@@ -34,7 +30,7 @@ class RSVPForm extends React.Component {
   submit(e){
     e.preventDefault();
 
-    var subRef = app.database().ref('submissions');
+    var subRef = firebase.database().ref('submissions');
     var formsub = subRef.push();
     formsub.set(this.state);
     

@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './RSVPForm.css';
+import TextField from '../TextField/TextField';
 
 class AttendanceInfo extends React.Component {
   constructor(props){
@@ -38,20 +39,15 @@ class AttendanceInfo extends React.Component {
     if(scope.state.isAttending){
         attendanceOption = (
             <div>
-                <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                    <label htmlFor="input_text" className="mdl-textfield__label">Total Number of Guests</label>
-                    <input onChange={this.props.changeHandler("guests")} type="text" className="mdl-textfield__input" id="rsvpGuestCount" />
-                </div>
-
-                <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                    <label htmlFor="input_text" className="mdl-textfield__label">Dietary Restrictions</label>
-                    <input onChange={this.props.changeHandler("dietary")} type="text" className="mdl-textfield__input" id="rsvpDiet" />
-                </div>
-
-                <div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
-                    <label htmlFor="input_text" className="mdl-textfield__label">Special Requests</label>
-                    <input onChange={this.props.changeHandler("special")} type="text" className="mdl-textfield__input" id="rsvpRequest" />
-                </div>
+                <TextField label="Total Number of Guests"
+                    onChange={this.props.changeHandler("guests")}
+                    id="rsvpGuestCount" />
+                <TextField label="Dietary Restrictions"
+                    onChange={this.props.changeHandler("dietary")} 
+                    id="rsvpDiet" />
+                <TextField label="Special Requests"
+                    onChange={this.props.changeHandler("special")}
+                    id="rsvpRequest" />
 
                 <label className="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" htmlFor="checkbox-1">
                     <input onChange={this.props.changeHandler("accomodations")} type="checkbox" id="checkbox-1" className="mdl-checkbox__input"/>
