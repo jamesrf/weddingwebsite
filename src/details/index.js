@@ -30,7 +30,7 @@ class DetailsPage extends React.Component {
                 <b>Attire:</b> Dapper<br/>
                 <br/>
                   Please note that parking is limited.<br/>
-                Transportation will be available from downtown at the Sheraton Wall Centre.
+                Transportation will be available from downtown at the Sheraton Vancouver Wall Centre.
                 </p>
               </div>
 
