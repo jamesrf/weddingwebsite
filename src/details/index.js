@@ -19,7 +19,14 @@ class DetailsPage extends React.Component {
               <div className="mdl-card__supporting-text">
                 <p className={s.content}>
                 Sunday, October 8<sup>th</sup>, 2017<br/>
-                6:30 PM (Guests may arrive at 6pm)<br/>
+                <br/>
+                Guests may arrive at 6 p.m.<br/>
+                Ceremony: 6:30 p.m. <br/>
+                Followed by Cocktails <br/>
+                <br/>
+                Dinner and Dancing <br/>
+                Cash bar <br/>
+                <br/>
                 <b>Attire:</b> Dapper<br/>
                 <br/>
                   Please note that parking is limited.<br/>
