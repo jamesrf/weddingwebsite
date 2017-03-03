@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group' // ES6
+
 import s from './RSVPForm.css';
 import TextField from '../TextField/TextField';
 
@@ -10,7 +12,6 @@ class AttendanceInfo extends React.Component {
   }
 
   toggleAttending(){
-      console.dir(this);
     if(this.state.isAttending){
         this.setState({isAttending:false});
     } else {
@@ -22,7 +23,7 @@ class AttendanceInfo extends React.Component {
   render() {
     let scope = this;
     let attendanceSelector = (
-        <div className="FOO">
+        <div>
         <label htmlFor="option-1" className="mdl-radio mdl-js-radio mdl-js-ripple-effect">
             <input type="radio" onChange={scope.toggleAttending} className="mdl-radio__button" id="option-1" name="rsvpAttending" value="yes" checked={this.state.isAttending}/>
             <span className="mdl-radio__label">Will Attend</span>
@@ -63,7 +64,12 @@ class AttendanceInfo extends React.Component {
 
             {attendanceSelector}
 
-            {attendanceOption}
+             <ReactCSSTransitionGroup
+              transitionName="attendance"
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={300}>
+                {attendanceOption}
+            </ReactCSSTransitionGroup>
 
         </div>
     )

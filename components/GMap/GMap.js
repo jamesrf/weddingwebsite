@@ -13,7 +13,6 @@ import React from 'react';
 class GMap extends React.Component {
 
   render() {
-    console.dir(this.props);
     let srcField = "https://www.google.com/maps/embed/v1/place?key=" + 
             this.props.ApiKey + "&q=" + this.props.LocationQuery
             + "&zoom=10";

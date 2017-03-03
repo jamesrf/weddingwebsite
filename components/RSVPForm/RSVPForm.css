@@ -17,5 +17,24 @@
 }
 
 .attendanceInfo {
-    padding-top: 20%;
+    padding-top: 10%;
 }
+
+:global(.attendance-enter) {
+  opacity: 0.01;
+}
+
+:global(.attendance-enter.attendance-enter-active) {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+:global(.attendance-leave) {
+  opacity: 1;
+}
+
+:global(.attendance-leave.attendance-leave-active) {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
