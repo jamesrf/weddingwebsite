@@ -12,5 +12,5 @@ module.exports = {
   title: 'James and Melinda',
   url: 'https://jamesandmelinda.party',
   project: 'jamesandmelinda-40614',
-  trackingID: 'UA-XXXXX-Y',                 // Google Analytics Site's ID
+  trackingID: 'UA-93464795-1'
 };
